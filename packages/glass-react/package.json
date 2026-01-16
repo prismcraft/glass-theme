@@ -1,0 +1,36 @@
+{
+  "name": "@prismcraft/glass-react",
+  "version": "0.1.0",
+  "description": "React adapter for @prismcraft/glass-core.",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm --dts --clean",
+    "dev": "tsup src/index.tsx --format esm --dts --watch",
+    "lint": "node -e \"console.log('lint: TODO (add eslint config if desired)')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@prismcraft/glass-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  }
+}
+
+

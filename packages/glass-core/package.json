@@ -1,0 +1,39 @@
+{
+  "name": "@prismcraft/glass-core",
+  "version": "0.1.0",
+  "description": "CSS-first glass theme: tokens + utilities + optional helper.",
+  "license": "MIT",
+  "sideEffects": ["**/*.css"],
+  "type": "module",
+  "files": [
+    "dist",
+    "tokens.css",
+    "glass.css",
+    "components.css",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tokens.css": "./tokens.css",
+    "./glass.css": "./glass.css",
+    "./components.css": "./components.css"
+  },
+  "scripts": {
+    "build": "pnpm run build:ts && pnpm run build:css",
+    "build:ts": "tsup src/index.ts --format esm --dts --clean",
+    "build:css": "node ./scripts/copy-css.mjs",
+    "dev": "pnpm run build --watch",
+    "lint": "node -e \"console.log('lint: TODO (add eslint config if desired)')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "pnpm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  }
+}
+
+

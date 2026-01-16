@@ -1,0 +1,112 @@
+/* Opinionated component classes (optional) */
+
+.glass-card {
+  padding: 18px 18px;
+}
+
+.glass-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.glass-subtitle {
+  opacity: 0.82;
+}
+
+.glass-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(var(--glass-accent), 0.45);
+  background:
+    linear-gradient(180deg, rgba(var(--glass-accent), 0.22), rgba(var(--glass-accent), 0.12)),
+    rgba(var(--glass-surface), calc(var(--glass-surface-alpha) + 0.06));
+  color: rgb(var(--glass-accent));
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.glass-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--glass-shadow-md);
+}
+
+.glass-button:active {
+  transform: translateY(0);
+}
+
+.glass-button.glass-accent {
+  border-color: rgba(var(--glass-accent), 0.7);
+  background: rgba(var(--glass-accent), 0.85);
+  color: rgb(255 255 255);
+  box-shadow:
+    var(--glass-shadow-sm),
+    0 0 0 1px rgba(var(--glass-accent), 0.25),
+    0 10px 30px rgba(var(--glass-accent), 0.25);
+}
+
+.glass-input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(var(--glass-border), var(--glass-border-alpha));
+  background: rgba(var(--glass-surface), calc(var(--glass-surface-alpha) + 0.04));
+  color: rgb(var(--glass-text));
+  outline: none;
+}
+
+.glass-input:focus {
+  box-shadow: 0 0 0 4px rgba(var(--glass-accent), 0.18);
+  border-color: rgba(var(--glass-accent), 0.45);
+}
+
+/* Modal */
+.glass-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 18, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 50;
+}
+
+.glass-modal {
+  width: min(560px, 92vw);
+  border-radius: 18px;
+  border: 1px solid rgba(var(--glass-border), var(--glass-border-alpha));
+  background: rgba(var(--glass-surface), calc(var(--glass-surface-alpha) + 0.12));
+  box-shadow: var(--glass-shadow-md);
+  padding: 18px;
+}
+
+.glass-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.glass-modal-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.glass-modal-body {
+  opacity: 0.9;
+}
+
+.glass-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
