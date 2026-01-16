@@ -16,6 +16,14 @@
     "version-packages": "changeset version",
     "release": "changeset publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prismcraft/glass-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prismcraft/glass-theme/issues"
+  },
+  "homepage": "https://github.com/prismcraft/glass-theme#readme",
   "devDependencies": {
     "@changesets/cli": "^2.27.8",
     "@types/node": "^22.10.7",

@@ -2,6 +2,15 @@
   "name": "@prismcraft/glass-react",
   "version": "0.1.0",
   "description": "React adapter for @prismcraft/glass-core.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prismcraft/glass-theme.git",
+    "directory": "packages/glass-react"
+  },
+  "bugs": {
+    "url": "https://github.com/prismcraft/glass-theme/issues"
+  },
+  "homepage": "https://github.com/prismcraft/glass-theme/tree/main/packages/glass-react#readme",
   "license": "MIT",
   "type": "module",
   "files": ["dist", "README.md"],
