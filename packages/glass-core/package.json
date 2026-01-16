@@ -1,6 +1,6 @@
 {
   "name": "@prismcraft/glass-core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "CSS-first glass theme: tokens + utilities + optional helper.",
   "repository": {
     "type": "git",
@@ -11,8 +11,13 @@
     "url": "https://github.com/prismcraft/glass-theme/issues"
   },
   "homepage": "https://github.com/prismcraft/glass-theme/tree/main/packages/glass-core#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "type": "module",
   "files": [
     "dist",
@@ -44,5 +49,3 @@
     "typescript": "^5.7.3"
   }
 }
-
-

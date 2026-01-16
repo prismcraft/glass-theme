@@ -1,6 +1,6 @@
 {
   "name": "@prismcraft/glass-angular",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Angular adapter for @prismcraft/glass-core (directives + service).",
   "repository": {
     "type": "git",
@@ -11,9 +11,15 @@
     "url": "https://github.com/prismcraft/glass-theme/issues"
   },
   "homepage": "https://github.com/prismcraft/glass-theme/tree/main/packages/glass-angular#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "type": "module",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -32,12 +38,10 @@
     "@angular/core": ">=16"
   },
   "dependencies": {
-    "@prismcraft/glass-core": "^0.1.0"
+    "@prismcraft/glass-core": "^1.0.0"
   },
   "devDependencies": {
     "tsup": "^8.3.5",
     "typescript": "^5.7.3"
   }
 }
-
-
